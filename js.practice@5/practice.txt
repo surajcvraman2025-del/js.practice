@@ -22,3 +22,44 @@ VM448:1 true
 console.log(  3 <=2 )
 VM484:1 false
 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// arry //
+let Education = [ "NAME-SURAJ",                           ---/in arry making put data first use -----> [] <------ close bracket /---
+"COLIFICATION-12TH PASS ITI-IT (25-26)",                      ---/ and when data end sprate the data first use -----> , <------ single comma /---
+"SKILL-IT,WEB-DEVELOPER,WEB-DEVops,CLUOD-ENGNEERER"];             ---/ Don`t put comma on the last data  ***| let a = [ "SURAJ", 18,ture,]; <----- this is wronge |
+ right is -----> let a = [ "SURAJ", 18,ture];|***
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Add  data from arry //
+
+let a = [ "suraj", 18 , false ]; 
+
+----> we need to add one more string : " wellcome back " <-----
+ method : use for this work is a ---push--- like in git ;
+  so :
+ (first is a var )---> a.push( ` give here wht you want to add ) ;
+ like -- 
+            a.push(18); 
+ 
+
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ // delete data from arry //
+
+let a = [ "suraj", 18 , false ];
+ 
+ method  : use for this work is a ---pop()---;
+
+a.pop(); <------------ No need to tell wht data delete -- pop() is delete auto last data from arry.
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,27 +1,36 @@
-let First_card = 1; //first var 
+let First_card = 1;                                               //first var 
+let Second_card = 10;                                            // second var
+let All_card = [First_card, Second_card];
 
-let Second_card = 10; // second var
+let Sum = First_card + Second_card;                                   // plus both var == 11 
+ let Card_val2 = document.getElementById("Cards_value");              // here take cards_value how show total card of player ;
+Card_val2.textContent = `Cards` + Sum
 
 
-let Sum = First_card + Second_card; // plus both var == 19 
-
-let Massage = ""; //create anothe var for greeting or masseges 
+let Massage = "";                                                 //create anothe var for greeting or masseges 
  
-Massage = `do you wana draw a new card?`; // put massege to var 
+Massage = `do you wana draw a new card?`;                         // put massege to var 
 
-let Black_Card = undefined;   // var for the blacj card 
+let Black_Card = undefined;                                       // var for the black card 
 
-let isAlive = undefined;  // var for the gamer status Alive 
+let isAlive = undefined;                                        // var for the gamer status Alive 
 
-const element_h2 = document.getElementById("Wel");
+let  element_h2 = document.getElementById("Wel");               // for massage show on web 
+
+// new  function that call render_game -------------------------------------------------------------------------------------------------------
+ function Start_game(){
+  Render_game();
+
+ }
+
+// END Function ;------------------------------------------------------------------------------------------------------------------------------
 
 
 
 
+  
 
-
-
-function Start_game () {
+function Render_game () {
 
 if (Sum <= 10 ) {         //if ---> Sum small to 10 or equals to 10 user isAlive status ----> false   / 19 <= 10 = false /
  isAlive = false; 
@@ -42,7 +51,7 @@ console.log("you  win " );
 console.log(Black_Card)    } 
 //console.log(isAlive); }
 }
-
+//-------------------------------------------------------------------------------------------------//
 
 // if (isAlive === false) {                   // this well we lear next chapter 
 //   const element_h2 = document.getElementById("Wel");
@@ -52,5 +61,19 @@ console.log(Black_Card)    }
 //   const element_h2 = document.getElementById("Wel");
 //   element_h2.textContent = "welcome";
 // }
+//-------------------------------------------------------------------------------------------------------//
+let Sum_el = document.getElementById("sum");   // sum is a element thsi show added card first_card + second_card and put to Sum_el;
 
+function New_cards()
+{
+  let Add_Sum = 4
+  Sum = Sum + Add_Sum;
+  All_card.push(Add_Sum);
+  //Card_val2.textContent = All_card
+  Sum_el.textContent = Sum
+  Start_game();
+
+
+
+}
  

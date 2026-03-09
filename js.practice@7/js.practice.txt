@@ -1,0 +1,37 @@
+You see the comma ( , ) because you are adding the whole array to textContent.
+
+Look at this line:
+
+Greeting_tag1.textContent = Greeting + " "
+
+Here Greeting is an array:
+
+["welcome back", "suraj", "this website help to shop B2B"]
+
+When JavaScript converts an array to a string, it automatically joins items with commas.
+
+So it becomes:
+
+welcome back,suraj,this website help to shop B2B
+
+That is why you see ,.
+
+
+
+this ch we lear random numbers in JavaScript
+ 
+
+ let a = Math.random() 
+ console.log(a) 
+ ans = 0.33333999 // any num 0 to 1 but not full 1 /
+ than you console again you same find num becuse you save in let you need to re do same thing 
+
+ so make function 
+  function ran() {
+let aa = Math.random * 6 ;
+console.log(aa)
+} 
+
+
+
+  

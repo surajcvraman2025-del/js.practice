@@ -1,6 +1,29 @@
+let Player_Obj = {
 
+  Name: "suraj thakur",
+  Chips: undefined,
+  Player_position: 5
+
+
+}
+let Obj_3 = Object.keys(Player_Obj);
+console.log(Obj_3)
                                              
-                                         
+       
+
+
+
+
+
+let el3 = document.getElementById("money");
+  for (let i = 0 ; i < Obj_3.length ; i ++ ){
+    
+   el3.textContent += Player_Obj[Obj_3[i]] + " "}
+
+
+
+
+
 let All_card = [];
 
 let Sum = undefined;  
@@ -8,7 +31,7 @@ let SumArr = [];                               // plus both var == 11
 let Card_val2 = document.getElementById("Cards_value");             // here take cards_value how show total card of player ;
 //Card_val2.textContent = `Cards` + Sum
 
-let Run_value = true;
+let Run_value = false;
 let Massage = "";                                                  //create anothe var for greeting or masseges 
  
 Massage = `do you wana draw a new card?`;                          // put massege to var 
@@ -76,14 +99,14 @@ Show_card();
 
 
 
-                                          //when you call function on let for value so auto var call functions 
+   //when you call function on let for value so auto var call functions 
 
 
 
 // new  function that call render_game -------------------------------------------------------------------------------------------------------
  function Start_game(){
  
-  Run_value = false
+  Run_value = true;
   console.log("run value after assing false when startgame funcation" + Run_value)
   let First_card = Random_card(); 
     SumArr.push(First_card);
@@ -112,9 +135,9 @@ Show_card();
 
   
 
-function Render_game () {
+function Render_game () {                                      
   console.log("-------------------------------------------")
-  console.log("render____funcation run ")
+  console.log("render____funcation run ")                                          //logic area 
 
 if (Sum <= 10 ) {         //if ---> Sum small to 10 or equals to 10 user isAlive status ----> false   / 19 <= 10 = false /
  isAlive = false; 
@@ -146,13 +169,13 @@ let Sum_el = document.getElementById("sum");   // sum is a element thsi show add
 
 function New_cards()
 {
-  console.log("NEW_cards funcation Run")
-  if (Run_value === true)
+  //console.log("NEW_cards funcation Run")
+  if (Run_value === false )
   {
     let a = "firt start game than take a New card"
     console.log(a)
        
-  }else if (Run_value === false)
+  }else if (Run_value === false );
  
   {   let Add_Sum = Random_card(); 
      All_card.push(Add_Sum);
@@ -174,4 +197,3 @@ function New_cards()
 
 }
 
- 

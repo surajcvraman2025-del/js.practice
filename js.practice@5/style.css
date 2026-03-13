@@ -1,4 +1,4 @@
-* {
+* {                         /*. for grab class element------,-#for id grab element*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -110,3 +110,14 @@ button:hover {
   right: 20px;
   transform: rotate(-15deg);
 }
+#money{
+  font-size: 26px;
+  color: #5bc117;
+}
+
+.ex{
+  color: #f8f8f8;
+}
+
+
+

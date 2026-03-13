@@ -118,3 +118,22 @@ Roll_Nub: 16,
 let Obj_key = Object.keys(obj);         // <------------------object.key()  put object to array 
 console.log(obj);
 console.log(typeof Obj_key);
+
+
+//---------- array remove & puts oprations -------//
+
+//pop() ---- last data of array remove;
+//push() --- fisrt data of aaray put ;
+//shift() --- last data remove from aaray;
+//Unshif() --- first data put on aaray ;
+//splice(      to -- to ) --- earse on give position on aaray ;
+
+
+let day = 13;
+let week = friday;
+ 
+
+
+if ( 13 && friday ){
+  console.log("fuck")
+}else{"not run "}

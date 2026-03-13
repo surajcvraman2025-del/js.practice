@@ -9,7 +9,7 @@ let Player_Obj = {
 let Obj_3 = Object.keys(Player_Obj);
 console.log(Obj_3)
                                              
-       
+      document.querySelector(".ex").textContent = "suraj"    
 
 
 
@@ -60,21 +60,6 @@ function Show_card()
     Card_val2.textContent +=  ":" + All_card[i] + " " ;
     }
    }
-//
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //----------------------new fuction for the random card those retune 5 -----------------------------------------------------------------------//
